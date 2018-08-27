@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <style>
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One|Iceland');
+</style>
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+    <form id="new-item-form" >
+      <div id="form-wrapper">
+        <div class="form-item" required>
+          <label for="name" class="primary">Name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item" required>
+          <label for="category" class="primary">Category</label>
+          <input type="text" id="category" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="membership_model" class="primary">Membership Model</label>
+          <select id="membership_model" required>
+            <option value="" disabled selected></option>
+            <option value="Fremium">Fremium </option>
+            <option value="Subscription">Subscription</option>
+            <option value="One-Off Payment">One-Off Payment</option>
+          </select>
+        </div>
+      </div>
+      <input type="submit" value="save"/>
+    </form>
+
+    <h1>Productivity App List:</h1>
+    <ul class="existing-list">
+      <li>Name: Evernote</li>
+      <li>Category: Note taking</li>
+      <li>Membership model: Fremium</li>
+    </ul>
+    <ul class="existing-list">
+      <li>Name App: Wrike</li>
+      <li>Category: Project Management</li>
+      <li>Subscription</li>
+    </ul>
+    <div id="app-list" class="box"></div>
+  </body>
+</html>
